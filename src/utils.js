@@ -1,5 +1,6 @@
 const axios = require('axios');
 
+// Function to handle HTTP requests
 async function handleHttpRequest(url) {
   try {
     const response = await axios.get(url);
@@ -10,6 +11,7 @@ async function handleHttpRequest(url) {
   }
 }
 
+// Function to parse and format the responses from the endpoints
 function parseAndFormatResponse(response) {
   // Assuming the response is a JSON object
   return JSON.stringify(response, null, 2);

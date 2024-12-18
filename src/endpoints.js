@@ -1,9 +1,11 @@
 const axios = require('axios');
 
+// Define the 3 random endpoints
 const endpoint1 = 'https://api.example.com/endpoint1';
 const endpoint2 = 'https://api.example.com/endpoint2';
 const endpoint3 = 'https://api.example.com/endpoint3';
 
+// Function to call Endpoint 1 and return the response
 async function callEndpoint1() {
   try {
     const response = await axios.get(endpoint1);
@@ -14,6 +16,7 @@ async function callEndpoint1() {
   }
 }
 
+// Function to call Endpoint 2 and return the response
 async function callEndpoint2() {
   try {
     const response = await axios.get(endpoint2);
@@ -24,6 +27,7 @@ async function callEndpoint2() {
   }
 }
 
+// Function to call Endpoint 3 and return the response
 async function callEndpoint3() {
   try {
     const response = await axios.get(endpoint3);
@@ -34,6 +38,7 @@ async function callEndpoint3() {
   }
 }
 
+// Export the functions to call each endpoint
 module.exports = {
   callEndpoint1,
   callEndpoint2,
