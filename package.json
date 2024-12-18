@@ -1,0 +1,18 @@
+{
+  "name": "anotherone",
+  "version": "1.0.0",
+  "description": "A Copilot skillset that interacts with 3 random endpoints.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "author": "",
+  "license": "ISC"
+}
